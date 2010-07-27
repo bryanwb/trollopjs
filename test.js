@@ -1,7 +1,7 @@
 var sys = require('sys');
-var trollopjs = require('./index');
+var trollopjs = require('./trollop');
 
-var assert = require('./dependencies/assert');
+var assert = require('assert');
 
 var assert_parses_correctly = function(parser, commandline, expected_opts, expected_leftovers) {
   opts = parser.parse(commandline);

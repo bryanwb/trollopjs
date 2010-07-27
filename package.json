@@ -1,0 +1,16 @@
+{
+  "name": "trollop",
+  "description": "A node.js (maybe common.js?) version of the Trollop ruby command line option parser",
+  "version": "0.1.1",
+  "author": "Nick Campbell <nicholas.j.campbell@gmail.com> (http://digitaltumbleweed.com/)", 
+  "contributors": [ 
+    "Benjamin Thomas <benjamin@benjaminthomas.org> (http://benjaminthomas.org)",
+    "Bryan Berry <bryan.berry@gmail.com> (http://renaissancegeek.org)"
+  ],
+  "main": "./trollop",
+  "repository" :
+  { "type" : "git", "url" : "http://github.com/bryanwb/trollopjs.git"
+  },
+  "engines": { "node": ">= 0.1.98" },
+  "dependencies": { "underscore" : "*" }
+}
