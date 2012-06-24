@@ -15,7 +15,7 @@
 // the subcommand options. We need to tell Trollop what the subcommands are, so
 // that it stops processing the global options when it encounters one of them.
 
-var sys = require('sys');
+var util = require('util');
 var trollopjs = require('../index');
 
 SUB_COMMANDS = ['delete', 'copy']
@@ -43,10 +43,10 @@ default:
   throw "unknown subcommand "+cmd;
 }
 
-sys.puts("Global options: " + sys.inspect(global_opts));
-sys.puts("Subcommand: " + cmd);
-sys.puts("Subcommand options: " + sys.inspect(cmd_opts));
-sys.puts("Remaining arguments: " + sys.inspect(argv));
+util.puts("Global options: " + util.inspect(global_opts));
+util.puts("Subcommand: " + cmd);
+util.puts("Subcommand options: " + util.inspect(cmd_opts));
+util.puts("Remaining arguments: " + util.inspect(argv));
 
 /* EXAMPLES
 
