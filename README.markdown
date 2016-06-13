@@ -38,8 +38,8 @@ QUICK EXAMPLE
       this.opt('num_thumbs', "Number of thumbs", {type: 'int'});   // an integer --num-thumbs <i>, defaulting to nil
     });
 
-    var sys = require('sys');
-    sys.puts(sys.inspect(opts));
+    var util = require('util');
+    util.puts(util.inspect(opts));
     /* prints:
     {
      "monkey": false,

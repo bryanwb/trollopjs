@@ -1,4 +1,4 @@
-var sys = require('sys');
+var util = require('util');
 var trollopjs = require('./trollop');
 
 var assert = require('assert');
@@ -1155,6 +1155,6 @@ EOM
 };
 
 for( var name in tests ) {
-  sys.puts(name);
+  util.puts(name);
   tests[name]();
 };

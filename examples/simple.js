@@ -1,4 +1,4 @@
-var sys = require('sys');
+var util = require('util');
 var trollopjs = require('../index');
 
 // no args given, so opts is just the default options
@@ -9,7 +9,7 @@ var opts = trollopjs.options(function() {
   this.opt('num_thumbs', "Number of thumbs", {type: 'int'}); // an integer --num-thumbs <i>, defaulting to nil
 });
 
-sys.puts(sys.inspect(opts));
+util.puts(util.inspect(opts));
 /* EXAMPLES
 
 node ./examples/simple.js
